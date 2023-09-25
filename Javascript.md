@@ -730,4 +730,14 @@ let set1 = new Set(woo)
 console.log(set1)
 ```
 ### Weak Collections, Memory, and Garbage Collections
-Map and Set‘s references to objects are strongly held and will not allow for garbage collection. This can get expensive if maps/sets reference large objects that are no longer needed, such as DOM elements that have already been removed from the DOM.
+Map and Set‘s references to objects are strongly held and will not allow for garbage collection. This can get expensive if maps/sets reference large objects that are no longer needed, such as DOM elements that have already been removed from the DOM.  
+These ES6 collections are ‘weak’ because they allow for objects which are no longer needed to be cleared from memory.  
+WeakMap can be used to keep an object’s private data private, and they can also be used to keep track of DOM nodes/objects.  
+WeakSets are Set Collections whose elements can be garbage collected when objects they’re referencing are no longer needed. WeakSets don’t allow for iteration.
+
+# Promises 
+## [Best Article](https://www.digitalocean.com/community/tutorials/understanding-javascript-promises)
+
+# async/await
+# Datastructures
+# Expensive Operation and Big O Notation
